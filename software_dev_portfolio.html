@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omama Eizeddin | Software Developer Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #f4f4f4;
+            --text-color: #333;
+            --header-bg: #005f73;
+            --accent: #ffd166;
+            --card-bg: #ffffff;
+        }
+
+        [data-theme="dark"] {
+            --bg-color: #1e1e1e;
+            --text-color: #e0e0e0;
+            --header-bg: #003d4c;
+            --accent: #ffe066;
+            --card-bg: #2a2a2a;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: background-color 0.3s, color 0.3s;
+        }
+        header {
+            background-color: var(--header-bg);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+        h2 {
+            color: var(--header-bg);
+        }
+        .project {
+            background: var(--card-bg);
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: var(--header-bg);
+            color: white;
+        }
+        .toggle-theme {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: var(--accent);
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button class="toggle-theme" onclick="toggleTheme()">Toggle Theme</button>
+    <header>
+        <h1>Omama Eizeddin</h1>
+        <p>Software Developer | Mississauga, ON</p>
+        <p>Email: omama.ez94@gmail.com | <a href="https://linkedin.com/in/omama-eizeddin" style="color: var(--accent);">LinkedIn</a></p>
+    </header>
+
+    <section>
+        <h2>About Me</h2>
+        <p>Detail-oriented Software Developer with a background in Civil Engineering. Experienced in full-stack development using Java Spring Boot, Angular, and cloud technologies (AWS, Azure). Strong team player with a proven ability to deliver efficient solutions in agile environments.</p>
+
+        <h2>Technical Skills</h2>
+        <ul>
+            <li><strong>Languages:</strong> Java, C, C++, Python, JavaScript, Kotlin, .NET</li>
+            <li><strong>Web:</strong> HTML5, CSS, JavaScript, Node.js, Angular, React</li>
+            <li><strong>Databases:</strong> MySQL, Oracle, NoSQL, Hadoop, Spark, Hive</li>
+            <li><strong>Cloud:</strong> AWS, Azure</li>
+            <li><strong>Tools:</strong> Git, RESTful APIs, Agile, Unit Testing, Debugging</li>
+        </ul>
+
+        <h2>Projects</h2>
+
+        <div class="project">
+            <h3>Student Portal Application</h3>
+            <p>Full-stack application using Java Spring Boot and Angular for managing students, professors, and courses. Enabled seamless CRUD operations through RESTful APIs.</p>
+            <img src="https://via.placeholder.com/800x400?text=Student+Portal+App" alt="Student Portal App">
+        </div>
+
+        <div class="project">
+            <h3>Attendance Management System</h3>
+            <p>Mobile app built with Flutter and Java, integrated with Google Maps and AWS for precise location tracking. Simplified time tracking and enhanced workforce accountability.</p>
+            <img src="https://via.placeholder.com/800x400?text=Attendance+App" alt="Attendance App">
+        </div>
+
+        <div class="project">
+            <h3>Big Data Hydro System Analysis</h3>
+            <p>Used Hadoop ecosystem to analyze hydro energy data and forecast trends, helping optimize energy budgets and usage.</p>
+            <img src="https://via.placeholder.com/800x400?text=Hydro+Data+Analysis" alt="Hydro Data Analysis">
+        </div>
+
+        <h2>Education</h2>
+        <ul>
+            <li><strong>Advanced Diploma:</strong> Software Development & Network Engineering, Sheridan College (2020–2024)</li>
+            <li><strong>Bachelor's Degree:</strong> Civil Engineering, Damascus University (2012–2015)</li>
+        </ul>
+
+        <h2>Experience</h2>
+        <ul>
+            <li><strong>Epic Consultant (Contract)</strong> - Hamilton Health Sciences, June 2022</li>
+            <li><strong>Store Associate (Part-Time)</strong> - WINNERS, Mississauga - Present</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Omama Eizeddin</p>
+    </footer>
+
+    <script>
+        function toggleTheme() {
+            document.documentElement.setAttribute(
+                'data-theme',
+                document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark'
+            );
+        }
+    </script>
+</body>
+</html>
